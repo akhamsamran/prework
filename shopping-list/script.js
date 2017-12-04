@@ -23,7 +23,7 @@ function handleItemForm(event, formRef) {
 function addItemToShoppingList(){
 	let itemName = document.getElementById("item-name");
 	let itemAmount = document.getElementById("item-amount");
-	let itemHtml = createListItemHtml();
+	let itemHtml = createListItemHtml(itemName.value, itemAmount.value);
 	console.log("Item HTML: ", itemHtml);
 	let itemListRef = document.getElementById("shopping-list");
 	itemListRef.insertAdjacentHTML("afterend", itemHtml);
@@ -31,7 +31,7 @@ function addItemToShoppingList(){
 
 function createListItemHtml() {
 	return `<li> 
-					Item Name - Amount
+					${itemName.value} - ${itemAmount.value}
 				</li>
 	`;
 }
