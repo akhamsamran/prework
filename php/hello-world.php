@@ -7,3 +7,27 @@
  */
 echo "Hello world";
 ?>
+<?php
+/* This is a section
+   of multi-line comments
+   which will not be
+   interpreted */
+?>
+<?php
+$mycounter = 1;
+$mystring  = "Hello";
+//like a matchbox labeled "mystring" with "Hello" written inside of it
+$myarray   = array("One", "Two", "Three");
+echo $mystring;
+?>
+<?php // test1.php
+$username = "Anna Khamsamran";
+echo $username;
+echo "<br>";
+$current_user = $username;
+echo $current_user;
+?>
+<?php
+$team = array('Anna', 'mike', 'john', 'bella');
+echo $team[3] //displays the name bella(because #1 is 0)
+?>
