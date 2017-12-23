@@ -31,3 +31,12 @@ echo $current_user;
 $team = array('Anna', 'mike', 'john', 'bella');
 echo $team[3] //displays the name bella(because #1 is 0)
 ?>
+<?php
+$oxo = array(array('x', ' ', 'o'),
+	array('o', 'o', 'x'),
+	array('x', 'o', ' '));
+
+echo $oxo[1][2];//returns 3rd element in 2nd row-the first # is the row and the 2nd is the column, remember 1 is 0
+
+?>
+
