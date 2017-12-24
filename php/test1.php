@@ -21,3 +21,8 @@ if ($y-- == 0) echo $y; //output is -1 and $y value changed to -1
 $x = 9;
 if (++$x == 10)  echo $x; //first increment the value of $x, then test to see if it is value of 10, if yes, then output the value
 ?>
+<?php
+$msgs = 5;
+echo "You have " . $msgs . " messages.";
+?>
+
