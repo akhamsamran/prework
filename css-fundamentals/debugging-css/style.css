@@ -1,0 +1,130 @@
+/* General styles =no change*/
+
+html {
+	font-family: 'Helvetica neue', Arial, 'sans serif';
+	font-size: 10px;
+}
+
+body {
+	width: 80em;
+	margin: 0 auto;
+}
+
+/* Typography =NO CHange*/
+
+h1 {
+	font-size: 4em;
+}
+
+h2 {
+	font-size: 3.2em;
+}
+
+p, li {
+	font-size: 1.7em;
+}
+/*+++ more specific section styles +++*/
+
+/* header and footer */
+
+header, footer {
+	background-color: teal;
+	height: 10em;
+	padding: 2em;
+}
+
+h1, footer p {
+	margin: 0;
+}
+/*changed from:
+h1, footer p {
+
+	margin: -70px;
+}*/
+
+h1 {
+	text-align: center;
+	padding: 0.5em 0;
+}
+
+/* main content */
+
+main {
+	padding: 2em;
+}
+
+main p, main li {
+	line-height: 2;
+}
+
+img {
+	float: right;
+	margin: 1.2em 2em;
+}
+
+h1 {
+	text-align: center;
+	padding: 0.5em 0;
+}
+
+/*WRONG:
+ /* General styles */
+
+html {
+	font-family: 'Helvetica neue', Arial, 'sans serif';
+	font-size: 10px;
+}
+/*WRONG:
+body {
+	width: 80em;
+	margin: 0 auto;
+}
+
+/* Typography */
+/*WRONG:
+h1 {
+	font-size: 4em;
+}
+
+h2 {
+	font-size: 3.2em;
+}
+
+pli {
+	font-size: 1.7em;
+}
+
+/*+++ more specific section styles +++*/
+
+/* header and footer */
+/*WRONG:
+header, footer {
+	background-colour: teal;
+	height: 10em;
+	padding: 2em;
+}
+
+h1, footer p {
+	margin: -70px;
+}
+
+h1 {
+	text-align: center;
+	padding: 0.5em 0;
+}
+
+/* main content */
+/*WRONG:
+main {
+	padding: 2em;
+}
+
+main p, main li {
+	line-height: 2;
+}
+
+img {
+	float: right
+	margin: 1.2em 2em;
+}
+*/
