@@ -8,8 +8,9 @@ body > * {
   padding: 20px;
   font-size: 20px;
   border: 20px solid rgba(0,0,0,0.5);
-	margin-bottom: 20px;
-	margin-top: 15px;
+margin-bottom: 20px;
+margin-top: 15px;
+
 }
 
 /* specific boxes */
@@ -21,15 +22,17 @@ header, footer {
 
 main {
   background-color: yellow;
-	margin: 100px;
+	/*margin: 100px;*/
 	/*margin: 5%;*/
-	/*margin-top: -50px*/
+	margin-top: 20px;
 	padding: 30px;
 	/*padding: 5%*/
 	border: 40px;
-	height: 200px;
-	width: 400px;
-	/*width: 60%;*/
+	/*height: 200px;
+	width: 400px;*/
+	width: 100%;
+	text-align: center;
+
 }
 
 header {
