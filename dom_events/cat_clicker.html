@@ -18,12 +18,10 @@
 
 		<script>
 			var catImage = document.getElementById("cat-pic");
+			var catDiv = div.getElementById("cat-click");
 
-			//problem here is how to use the script to tell the wording to appear in the chat-chat div?
-						var onCatClick = function() {
-				catImage.textContent = "Meow!"
+			var onCatClick = function() {
+				catDiv.textContent = "Meow!"
 			};
-			catImage.addEventListener("Click", onButtonClick);
+			catImage.addEventListener("Click", onCatClick);
 		</script>
-	</body>
-</html>
