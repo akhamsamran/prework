@@ -1,4 +1,4 @@
-/* General styles - put these straight into your stylesheet */
+/* General styles */
 
 body {
 	margin: 0;
@@ -9,15 +9,35 @@ html {
 	font-size: 10px;
 	background-color: #ccc;
 }
+/*header styles*/
+
+/*business card contents styles*/
+article {
+	width: 35em;
+	height: 22em;
+	margin: 5em auto;
+	background-colour: red;
+	border: 0.2em solid black;
+	border-radius: 1.5em;
+}
+
+
+/*footer styles*/
+
 
 /* Selectors to be matched up with rulesets */
-
+/* specificity:
+.card article img=13
+.card footer=12
+.card header=12
+.card=10
+*/
 .card article img
 .card footer
 .card header
 .card
 
-	/* Rulesets to be matched up with selectors */
+	/* Rulesets to be matched up with selectors
 
 {
 	width: 35em;
@@ -27,7 +47,7 @@ html {
 	border: 0.2em solid black;
 	border-radius: 1.5em;
 }
-
+*/
 {
 	background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
 	border-radius: 1.5em 1.5em 0 0;
