@@ -10,9 +10,12 @@ html {
 	background-color: #ccc;
 }
 /*header styles*/
-
+.card header {
+	background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+	border-radius: 1.5em 1.5em 0 0;
+}
 /*business card contents styles*/
-article {
+.card {
 	width: 35em;
 	height: 22em;
 	margin: 5em auto;
@@ -20,13 +23,16 @@ article {
 	border: 0.2em solid black;
 	border-radius: 1.5em;
 }
+.card article img {
+	max-height: 100%
+	float: right;
+}
 
-header {
+/*footer styles*/
+.card footer {
 	background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
 	border-radius: 1.5em 1.5em 0 0;
 }
-/*footer styles*/
-
 
 /* Selectors to be matched up with rulesets */
 /* specificity:
@@ -51,17 +57,20 @@ header {
 	border-radius: 1.5em;
 }
 */
+	/*
 {
 	background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
 	border-radius: 1.5em 1.5em 0 0;
 }
-
+*/
+	/*
 {
 	background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
 	border-radius: 0 0 1.5em 1.5em;
 }
-
+*/
+	/*
 {
 	max-height: 100%
 	float: right;
-}
+}*/
