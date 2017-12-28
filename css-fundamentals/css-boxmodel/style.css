@@ -1,26 +1,26 @@
-+/* General styles */
-+
-+body {
-+  margin: 0;
-+}
-+
-+body > * {
-+  padding: 20px;
-+  font-size: 20px;
-+  border: 20px solid rgba(0,0,0,0.5);
+/* General styles */
+
+body {
+  margin: 0;
+}
+
+body > * {
+  padding: 20px;
+  font-size: 20px;
+  border: 20px solid rgba(0,0,0,0.5);
 	margin-bottom: 20px;
 	margin-top: 15px;
-+}
-+
-+/* specific boxes */
-+
-+header, footer {
-+  background-color: blue;
-+  color: white;
-+}
-+
-+main {
-+  background-color: yellow;
+}
+
+/* specific boxes */
+
+header, footer {
+  background-color: blue;
+  color: white;
+}
+
+main {
+  background-color: yellow;
 	margin: 100px;
 	/*margin: 5%;*/
 	/*margin-top: -50px*/
@@ -30,13 +30,12 @@
 	height: 200px;
 	width: 400px;
 	/*width: 60%;*/
-+}
-+
-+header {
-+
-+}
-+
-+footer {
-+
-+}
-+
+}
+
+header {
+
+}
+
+footer {
+
+}
