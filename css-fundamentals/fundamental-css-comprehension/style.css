@@ -24,8 +24,8 @@ html {
 	border-radius: 1.5em;
 }
 .card article img {
-	max-height: 100%
-	float: right;
+	max-height : 100%;
+	float : right;
 }
 
 /*footer styles*/
@@ -41,11 +41,12 @@ html {
 .card header=12
 .card=10
 */
+/*
 .card article img
 .card footer
 .card header
 .card
-
+*/
 	/* Rulesets to be matched up with selectors
 
 {
