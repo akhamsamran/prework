@@ -41,8 +41,7 @@
 
 		<script>
 			// Your JavaScript goes here
-			/*ADDS VARIABLES AND GIVES THEM NAMES FOR USE BELOW AND
-			GENERATES RANDOM NUMBER TO GUESS*/
+/*ADDS VARIABLES, GIVES THEM NAMES FOR USE BELOW, GENERATES RANDOM NUMBER TO GUESS*/
 			var randomNumber = Math.floor(Math.random() * 100) + 1;
 
 			var guesses = document.querySelector('.guesses');
@@ -55,7 +54,7 @@
 			var guessCount = 1;
 			var resetButton;
 
-			/*CHECKS IF GUESS WAS CORRECT/TOO LOW/TOO HIGH/AND NUMBER OF
+/*CHECKS IF GUESS WAS CORRECT/TOO LOW/TOO HIGH/AND NUMBER OF
 			GUESSES(ONLY 10 ALLOWED):*/
 			WE
 			function checkGuess() {
@@ -126,7 +125,8 @@
 				guessField.value = '';
 				guessField.focus();
 			}
-			/*EVENT LISTENER FOR "CLICKED" CHECK GUESS BUTTON:*/
+
+/*EVENT LISTENER FOR "CLICKED" CHECK GUESS BUTTON:*/
 			guessSubmit.addEventListener('click', checkGuess);
 			/*above is an event listener added to the guessSubmit button.
 			This is a method that takes two input values (called arguments)
@@ -134,7 +134,7 @@
 			as a string, and the code we want to run when the event occurs
 			(in this case the checkGuess() function*/
 
-			/*SET GAME OVER*/
+/*SET GAME OVER*/
 			function setGameOver() {
 				guessField.disabled = true;
 				guessSubmit.disabled = true;
@@ -152,7 +152,7 @@
 				/*final line sets an event listener on our new button so that
 				when it is clicked, a function called resetGame() is run.*/
 			}
-			/*RESET GAME:*/
+/*RESET GAME:*/
 			function resetGame() {
 				guessCount = 1;
 				/*Puts the guessCount back down to 1.*/
@@ -161,7 +161,9 @@
 				for (var i = 0 ; i < resetParas.length ; i++) {
 					resetParas[i].textContent = '';
 				}
-				/*Clears all the information paragraphs.*/
+				/*Clears all the information paragraphs.and LOOP TO ENSURE
+				THE CODE CAN RUN OVER AND OVER*/
+
 
 				resetButton.parentNode.removeChild(resetButton);
 				/*Removes the reset button from our code*/
