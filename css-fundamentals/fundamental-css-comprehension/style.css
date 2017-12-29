@@ -9,10 +9,19 @@ html {
 	font-size: 10px;
 	background-color: #ccc;
 }
+/*general styles*/
+h2 {
+	font-size: 1.25em;
+}
+p {
+	font-size: .9375em;
+}
 /*header styles*/
 .card header {
 	background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
 	border-radius: 1.5em 1.5em 0 0;
+	height: 3.125em;
+	padding: .333em;
 }
 /*business card contents styles*/
 .card {
@@ -22,22 +31,30 @@ html {
 	background-color: red;
 	border: 0.2em solid black;
 	border-radius: 1.5em;
+
 }
 .card article img {
 	max-height : 100%;
 	float : right;
+}
+.card article {
+	background-image: linear-gradient(to bottom,rgba(19, 14, 14, 0.46), rgb(150, 70, 70));
+	padding: .333em;
+	height: 14em;
+
 }
 
 /*footer styles*/
 .card footer {
 	background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
 	border-radius: 1.5em 1.5em 0 0;
+	height: 3.125em;
+	padding: .333em;
 }
 .card footer header {
-	height: 50px;
-	padding: 10px;
-
+;
 }
+
 /* Selectors to be matched up with rulesets */
 /* specificity:
 .card article img=13
@@ -51,31 +68,31 @@ html {
 .card header
 .card
 */
-	/* Rulesets to be matched up with selectors
+/* Rulesets to be matched up with selectors
 
 {
-	width: 35em;
-	height: 22em;
-	margin: 5em auto;
-	background-colour: red;
-	border: 0.2em solid black;
-	border-radius: 1.5em;
+width: 35em;
+height: 22em;
+margin: 5em auto;
+background-colour: red;
+border: 0.2em solid black;
+border-radius: 1.5em;
 }
 */
-	/*
+/*
 {
-	background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
-	border-radius: 1.5em 1.5em 0 0;
+background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+border-radius: 1.5em 1.5em 0 0;
 }
 */
-	/*
+/*
 {
-	background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
-	border-radius: 0 0 1.5em 1.5em;
+background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+border-radius: 0 0 1.5em 1.5em;
 }
 */
-	/*
+/*
 {
-	max-height: 100%
-	float: right;
+max-height: 100%
+float: right;
 }*/
