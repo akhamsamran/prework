@@ -41,6 +41,8 @@
 
 		<script>
 			// Your JavaScript goes here
+			/*ADDS VARIABLES AND GIVES THEM NAMES FOR USE BELOW AND
+			GENERATES RANDOM NUMBER TO GUESS*/
 			var randomNumber = Math.floor(Math.random() * 100) + 1;
 
 			var guesses = document.querySelector('.guesses');
@@ -53,6 +55,9 @@
 			var guessCount = 1;
 			var resetButton;
 
+			/*CHECKS IF GUESS WAS CORRECT/TOO LOW/TOO HIGH/AND NUMBER OF
+			GUESSES(ONLY 10 ALLOWED):*/
+			WE
 			function checkGuess() {
 				var userGuess = Number(guessField.value);
 				/*line above declares a variable called userGuess
@@ -113,12 +118,69 @@
 					 (++ is an incrementation operation — increment by 1),
 					 and empty the value out of the form text field and focus
 					 it again, ready for the next guess to be entered.*/
+
+
 				}
 
 				guessCount++;
 				guessField.value = '';
 				guessField.focus();
 			}
+			/*EVENT LISTENER FOR "CLICKED" CHECK GUESS BUTTON:*/
+			guessSubmit.addEventListener('click', checkGuess);
+			/*above is an event listener added to the guessSubmit button.
+			This is a method that takes two input values (called arguments)
+			— the type of event we are listening out for (in this case click)
+			as a string, and the code we want to run when the event occurs
+			(in this case the checkGuess() function*/
+
+			/*SET GAME OVER*/
+			function setGameOver() {
+				guessField.disabled = true;
+				guessSubmit.disabled = true;
+				/*first two lines disable the form text input and button by
+			setting their disabled properties to true. This is necessary,
+			because if we didn't, the user could submit more guesses after
+			the game is over*/
+				resetButton = document.createElement('button');
+				resetButton.textContent = 'Start new game';
+				document.body.appendChild(resetButton);
+				/*three lines generate a new <button> element, set its text
+				label to "Start new game", and add it to the bottom of our
+				existing HTML.*/
+				resetButton.addEventListener('click', resetGame);
+				/*final line sets an event listener on our new button so that
+				when it is clicked, a function called resetGame() is run.*/
+			}
+			/*RESET GAME:*/
+			function resetGame() {
+				guessCount = 1;
+				/*Puts the guessCount back down to 1.*/
+
+				var resetParas = document.querySelectorAll('.resultParas p');
+				for (var i = 0 ; i < resetParas.length ; i++) {
+					resetParas[i].textContent = '';
+				}
+				/*Clears all the information paragraphs.*/
+
+				resetButton.parentNode.removeChild(resetButton);
+				/*Removes the reset button from our code*/
+
+				guessField.disabled = false;
+				guessSubmit.disabled = false;
+				guessField.value = '';
+				guessField.focus();
+				/*Enables the form elements, and empties and focuses the
+				text field, ready for a new guess to be entered.*/
+
+				lastResult.style.backgroundColor = 'white';
+				/*Removes the background color from the lastResult paragraph*/
+
+				randomNumber = Math.floor(Math.random() * 100) + 1;
+				/*Generates a new random number so that you are not just
+				guessing the same number again!*/
+			}
+
 		</script>
 	</body>
 </html>
