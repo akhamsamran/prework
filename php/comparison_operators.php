@@ -170,7 +170,35 @@ for ($j = 0 ; $j < 100 ; ++$jb)
 	if ($written == FALSE) break;
 }
 fclose($fp);*/
+/*the first line opens the file text.txt for writing in binary mode. and
+returns a pointer to the file in te variable $fp
+the loop iterates 100 times from 0-99, writing string data into the file.
+after each write the variable $written is assinged a value by the fwrite function
+representing the number of characters correctly writtn. if there i8s an error
+the fwrite functrion assigns the value FALSE. when FALSE, it breaks out of
+the loop. to break out of deeper levels, add a number, example: (break 2;)*/
 
+/* the continue statment exits current iteration and moves to next iteration*/
+/* example 4-26 trapping division by zero using continue*/
+$j = 10;
+while ($j > -10)
+{
+	$j--;
+	if ($j == 0) continue; // this tells it to skip when $j is equal to 0
+	echo (10 / $j) . "<br>";
+}
+
+/*implicit and explicit casting*/
+/*example 4-37 this expression returns a floating-point number*/
+$a = 56;
+$b =12;
+$c = $a / $b;
+echo $c;
+//to change the outcome for $c to an interger (called "explicit casting"):
+$a = 56;
+$b =12;
+$c = (int) ($a / $b);
+echo $c;
 
 
 ?>
