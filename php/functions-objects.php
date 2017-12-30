@@ -114,6 +114,85 @@ else
 	echo "Function does not exist - better write our own";
 }*/
 
+/*phpversion*/
+
+
+/* CLASS TERMINOLOGY
+OBJECT: an instance of the class
+CLASS: composite of data and code
+INSTANCE=OBJECT
+PROPERTIES: the data held by the class
+METHODS: functions used by the class
+ENCAPSULATE classes to deny outside code directaccess to its data
+INTERFACE: methods used to access data within the class
+INHERITANCE: using properties from another class
+SUPERCLASS: original class
+SUBCLASS: derived class*/
+
+
+/*example 5-10 Declaring a class and examining an object
+print_r "r" means in human readable format*/
+/*Parse error: syntax error, unexpected 'print_r' (T_STRING),
+expecting ',' or ';'*/
+/*print_r($object);
+class User
+{
+public $name, $password;
+function save_user()
+{
+echo "Save User code goes here";
+}
+}*/
+/* output will be:
+User Object
+(
+[name] =>
+[password] =>
+)
+OR
+User Object ([name] => [password] =>)*/
+
+/*Creating an Object:
+$object = new User; //assign an object to the User class
+$temp = new User('name', 'password'); //pass parameters to the call
+
+/* Accessing Objects: example 5-11 Creating and interacting with an object
+to access an object's property: $object->property(),
+to access an object's method:   $object->method()
+*/
+/*$object = new User;
+print_r($object); echo "<br>";
+
+$object->name = "Joe";
+$object->password = "mypass";
+print_r($object); echo "<br>";
+
+
+$object->save_user();
+
+class User
+{
+	public $name, $password;
+
+	function save_user()
+	{
+		echo "Save User code goes here";
+	}
+}*/
+/*OUTPUT of above should be:
+User Object
+User Object
+(
+[name] =>
+[password] =>
+)
+User Object
+(
+[name] = Joe
+[password] = mypass
+)
+Save User code goes here
+*/
 
 
 
