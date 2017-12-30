@@ -194,7 +194,43 @@ User Object
 Save User code goes here
 */
 
+/*CLONING OBJECTS: example 5-12 Copying and object:*/
+/*
+$object1 = new User();
+$object1->name = "Alice";
+$object2 = $object1;
+$object2->name = "Amy";
 
+echo "object1 name = " . $object1->name . "<br>";
+echo "object2 name = " . $object2->name;
 
+class User
+{
+	public $name;
+}
+*/
+/*OUTPUT for above should be:
+object1 name = Amy
+object2 name = Amy
+*/
 
+/* example 5-13 CLONING and object:*/
+/*
+$object1 = new User();
+$object1->name = "Alice";
+$object2 = clone $object1;
+$object2->name = "Amy";
+
+echo "object1 name = " . $object1->name . "<br>";
+echo "object2 name = " . object2->name;
+
+class User
+{
+public $name;
+}
+*/
+/*OUTPUT of above should be:
+object1 name = Alice
+object2 name = Amy
+*/
 ?>
