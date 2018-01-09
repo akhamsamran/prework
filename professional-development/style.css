@@ -1,0 +1,18 @@
+html {
+	background-color: rgba(50,50,0,.2);
+	font-size: 16px;
+	font-family: "Futura Md BT";
+}
+
+ul {
+	background: rgba(50,75,10,.2);
+	padding: 10px;
+}
+
+li {
+	margin-left: 20px;
+}
+
+ol {
+	background: rgba(40,60,10,.2);
+}
