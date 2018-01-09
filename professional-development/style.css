@@ -4,15 +4,16 @@ html {
 	font-family: "Futura Md BT";
 }
 
-ul {
-	background: rgba(50,75,10,.2);
-	padding: 10px;
+
+
+h2 {
+	background-color: rgba(30,60,0,.2)
 }
 
-li {
-	margin-left: 20px;
+ul {
+	color: #4c4a42;
 }
 
 ol {
-	background: rgba(40,60,10,.2);
+	color: #4c4a42;
 }
